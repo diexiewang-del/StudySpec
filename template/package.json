@@ -1,0 +1,21 @@
+{
+  "name": "@studyspec/core",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "StudySpec 共享类型、校验和确定性排期。阶段 1 不包含浏览器存储实现。",
+  "exports": {
+    ".": "./src/index.ts",
+    "./fixtures/homework.sample.json": "./fixtures/homework.sample.json",
+    "./fixtures/exam-review.sample.json": "./fixtures/exam-review.sample.json"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json --noEmit",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "node --test src/dates.test.ts src/validate.test.ts src/schedule.test.ts src/storage.test.ts src/source-guards.test.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^24.19.2",
+    "typescript": "~7.0.2"
+  }
+}

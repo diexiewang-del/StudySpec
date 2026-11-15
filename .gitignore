@@ -1,0 +1,18 @@
+# Dependencies and build output
+node_modules/
+dist/
+dist-ssr/
+*.tsbuildinfo
+.vite/
+coverage/
+
+# Local environment and secrets
+.env
+.env.*
+*.local
+
+# OS and editor noise
+.DS_Store
+
+# .kiro is the specification workspace and must stay tracked.
+# Do not add a rule that ignores .kiro.

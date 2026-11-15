@@ -1,0 +1,44 @@
+{
+  "schemaVersion": "1.0.0",
+  "kind": "homework",
+  "meta": {
+    "title": "示例：第十一周作业",
+    "sample": true,
+    "sampleLabel": "示例数据 · 非真实作业",
+    "anchorDate": "2026-11-09"
+  },
+  "horizon": {
+    "start": "2026-11-09",
+    "end": "2026-11-15"
+  },
+  "capacity": {
+    "minutesPerDay": 90,
+    "unavailableDates": ["2026-11-12"]
+  },
+  "items": [
+    {
+      "id": "hw-math-1",
+      "title": "线性代数习题 3.2",
+      "estimatedMinutes": 120,
+      "deadline": "2026-11-11",
+      "priority": 1,
+      "course": "线性代数"
+    },
+    {
+      "id": "hw-cs-1",
+      "title": "数据结构实验报告",
+      "estimatedMinutes": 300,
+      "deadline": "2026-11-13",
+      "priority": 1,
+      "course": "数据结构"
+    },
+    {
+      "id": "hw-eng-1",
+      "title": "英语阅读笔记",
+      "estimatedMinutes": 60,
+      "deadline": "2026-11-14",
+      "priority": 2,
+      "course": "大学英语"
+    }
+  ]
+}

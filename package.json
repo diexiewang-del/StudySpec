@@ -1,0 +1,25 @@
+{
+  "name": "studyspec",
+  "version": "0.1.0",
+  "private": true,
+  "license": "MIT",
+  "type": "module",
+  "description": "StudySpec 阶段 1：本地优先的学生规划规格与骨架。",
+  "workspaces": [
+    "template",
+    "app-homework",
+    "app-exam-review"
+  ],
+  "scripts": {
+    "test": "npm run test -w @studyspec/core",
+    "typecheck": "npm run typecheck -w @studyspec/core && npm run typecheck -w @studyspec/app-homework && npm run typecheck -w @studyspec/app-exam-review",
+    "build": "npm run build -w @studyspec/core && npm run build -w @studyspec/app-homework && npm run build -w @studyspec/app-exam-review",
+    "dev:homework": "npm run dev -w @studyspec/app-homework",
+    "dev:exam": "npm run dev -w @studyspec/app-exam-review",
+    "preview:homework": "npm run preview -w @studyspec/app-homework",
+    "preview:exam": "npm run preview -w @studyspec/app-exam-review"
+  },
+  "engines": {
+    "node": ">=22.18"
+  }
+}

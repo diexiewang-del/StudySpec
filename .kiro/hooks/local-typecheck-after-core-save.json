@@ -1,0 +1,17 @@
+{
+  "version": "v1",
+  "hooks": [
+    {
+      "name": "local-typecheck-after-core-save",
+      "description": "DISABLED CANDIDATE. Written 2026-11-09 by comparing the published schema at https://kiro.dev/docs/hooks/ and the trigger table at https://kiro.dev/docs/ide/whats-new-v1/hooks/. This file has not been loaded or executed by Kiro. enabled is false, so it does not run. IDE acceptance remains pending until a person opens it in Kiro. If someone later enables it, the command only runs the local typecheck script. It does not push, deploy, publish, upload, or call the network.",
+      "trigger": "PostFileSave",
+      "matcher": "template/src/.*\\.ts$",
+      "enabled": false,
+      "timeout": 120,
+      "action": {
+        "type": "command",
+        "command": "npm run typecheck"
+      }
+    }
+  ]
+}

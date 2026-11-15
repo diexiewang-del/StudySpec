@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "1.0.0",
+  "kind": "exam-review",
+  "meta": {
+    "title": "示例：高等数学期中复习",
+    "sample": true,
+    "sampleLabel": "示例数据 · 非真实考试安排",
+    "anchorDate": "2026-11-09"
+  },
+  "horizon": {
+    "start": "2026-11-09",
+    "end": "2026-11-13"
+  },
+  "capacity": {
+    "minutesPerDay": 60,
+    "unavailableDates": ["2026-11-11"]
+  },
+  "items": [
+    {
+      "id": "rev-limit",
+      "title": "极限与连续",
+      "estimatedMinutes": 90,
+      "deadline": "2026-11-12",
+      "priority": 1,
+      "subject": "高等数学",
+      "topic": "极限与连续"
+    },
+    {
+      "id": "rev-integral",
+      "title": "不定积分",
+      "estimatedMinutes": 200,
+      "deadline": "2026-11-12",
+      "priority": 2,
+      "subject": "高等数学",
+      "topic": "不定积分"
+    },
+    {
+      "id": "rev-derivative",
+      "title": "导数与微分",
+      "estimatedMinutes": 120,
+      "deadline": "2026-11-13",
+      "priority": 1,
+      "subject": "高等数学",
+      "topic": "导数与微分"
+    }
+  ]
+}
